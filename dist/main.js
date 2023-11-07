@@ -1,1 +1,1 @@
-console.log("woohooo");
+(()=>{"use strict";(()=>{const e=document.getElementById("content"),n=document.createElement("h2");n.innerHTML="Nick's Coffee Shop";const o=document.createElement("div");o.innerHTML="Coffee so good that you forget you are in your pjs when you're here early mornings.",e.appendChild(n),e.appendChild(o)})()})();

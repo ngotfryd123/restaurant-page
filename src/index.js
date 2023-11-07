@@ -1,1 +1,3 @@
-console.log("woohooo");
+import { functionOne } from './one';
+
+functionOne();
