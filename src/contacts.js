@@ -1,3 +1,4 @@
+const contactsFunc = () => {
 const people = [{
     name: "Nick",
     position: "Owner/manager",
@@ -18,3 +19,5 @@ const people = [{
     phone: "111-131-1111",
     email:"fakeemail@fakeemail.com"
 }]
+}
+export { contactsFunc };

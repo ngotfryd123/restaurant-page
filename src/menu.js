@@ -1,3 +1,4 @@
+const menuFunc = () => {
 const drinks = [{
     name: "Black Coffee",
     description: "Quick n hot and hits the caffeine spot.",
@@ -81,3 +82,6 @@ const drinks = [{
     description: "Toasted almonds and filled with a sweet almond filling or frangipane swirled throughout the dough.",
     price: "$13"
 }];
+}
+
+export { menuFunc };
