@@ -2,28 +2,29 @@ import { functionOne } from './one';
 import { menuFunc } from './menu';
 import { contactsFunc } from './contacts';
 
-functionOne();
-
 const clearScreen = () => {
     const content = document.getElementById("content");
     content.innerHTML="";
+    console.log("why");
 };
 
 const home = document.getElementById("home");
 const menu = document.getElementById("menu");
-const contact = document.getElementById("content");
+const contact = document.getElementById("contact");
 
-home.addEventListener('event',() => {    
+home.addEventListener('click',() => {    
     clearScreen();
     functionOne();    
 });
 
-menu.addEventListener('event',() => {    
+menu.addEventListener('click',() => {    
     clearScreen();
     menuFunc();    
 });
 
-contact.addEventListener('event',() => {    
+contact.addEventListener('click',() => {    
     clearScreen();
     contactsFunc();    
 });
+
+functionOne();
