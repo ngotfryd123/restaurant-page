@@ -82,6 +82,29 @@ const drinks = [{
     description: "Toasted almonds and filled with a sweet almond filling or frangipane swirled throughout the dough.",
     price: "$13"
 }];
-}
+
+const container = document.getElementById("content");
+
+// Function to create and append an HTML element for each menu item
+const appendMenuItemsToDOM = (items, category) => {
+    const categoryHeading = document.createElement("h2");
+    categoryHeading.textContent = category;
+    container.appendChild(categoryHeading);
+
+    const itemList = document.createElement("ul");
+
+    items.forEach(item => {
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `<strong>${item.name}</strong><br>${item.description}<br>${item.price}`;
+        itemList.appendChild(listItem);
+    });
+
+    container.appendChild(itemList);
+};
+
+// Append drinks and dishes to the DOM
+appendMenuItemsToDOM(drinks, "Drinks");
+appendMenuItemsToDOM(dishes, "Dishes");
+};
 
 export { menuFunc };

@@ -19,5 +19,26 @@ const people = [{
     phone: "111-131-1111",
     email:"fakeemail@fakeemail.com"
 }]
+
+const container = document.getElementById("content");
+
+const appendContacts = (items) => {
+    
+    const itemList = document.createElement("ul");
+
+    items.forEach(item => {
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `<strong>${item.name}</strong><br>${item.position}<br>${item.phone}<br>${item.email}`;
+        itemList.appendChild(listItem);
+    });
+
+    container.appendChild(itemList);
+};
+
+
+appendContacts(people);
+
+
+
 }
 export { contactsFunc };
